@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-//Extra
+//Extra/Bonus
 while (true)
 {
     Console.WriteLine("Hello, Please enter your name:");
@@ -10,20 +10,20 @@ while (true)
     Console.WriteLine("Please enter a number between 1-100");
     int num = int.Parse(Console.ReadLine());
 
-    //extra if statement
+    //bonus if statement
     if (num <= 0 || num >= 101)
     {
-        Console.WriteLine(name + " " + num + " That was not between 1 and 100");
-        break;
+        Console.WriteLine(name + " " + num + " That was not between 1 and 100 :( Goodbye");
+        //break;
     }
-    //if statements
+    //else if statements
     else if (num % 2 != 0 && num < 60)
     {
         Console.WriteLine(name + " " + num + " Odd and less than 60");
     }
-    else if (num % 2 == 0 && num < 60)
+    else if (num % 2 == 0 && num > 2 && num <= 24)
     {
-        Console.WriteLine(name + " " + num + " Even and less than 60");
+        Console.WriteLine(name + " " + num + " Even and less than 25");
     }
     else if (num % 2 == 0 && num > 26 && num <= 60)
     {
